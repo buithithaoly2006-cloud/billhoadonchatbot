@@ -286,37 +286,22 @@ else:
 
     # =========================
 
-    st.markdown(
+  # TỔNG TIỀN
 
-        f"""
+# =========================
 
-        <div style="
+st.divider()
 
-            background-color:#f5f5f5;
+st.subheader("💰 TỔNG THANH TOÁN")
 
-            padding:20px;
+st.metric(
 
-            border-radius:10px;
+    label="Số tiền cần thanh toán",
 
-            text-align:center;
+    value=f"{tong_tien:,} VNĐ"
 
-        ">
+)  
 
-            <h2>TỔNG THANH TOÁN</h2>
-
-            <h1 style="color:#e91e63;">
-
-                {tong_tien:,} VNĐ
-
-            </h1>
-
-        </div>
-
-        """,
-
-        unsafe_allow_html=True
-
-    )
 
     st.write("")
 
